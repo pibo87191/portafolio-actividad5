@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Otto Iván Piñón Barajas</title>
+    <meta name="description" content="Portafolio personal de Otto Iván Piñón Barajas, estudiante de Ingeniería de Desarrollo de Software Multiplataforma en León. Experiencia en Ciberseguridad, Linux, y desarrollo web.">
+    <meta name="keywords" content="Desarrollo de Software, Ciberseguridad, Redes, Linux, Java, C, Mantenimiento de Hardware, León">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/favicon/" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Playfair+Display:ital@0;1&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section>
+            <figure>
+                <img src="/imagenes/liru.JPEG" alt="Foto de perfil" id="donCamaron">
+            </figure>
+        </section>
+        <nav>
+            <a href="#contacto">Contactos</a>
+            <a href="#informacion">Más información</a>
+            <a href="#curriculum">Curriculum</a>
+        </nav>
+    </header>
+
+    <section id="informacion" class="informacion">
+        <section id="infoAd">
+            <section id="text">
+                <h1>Sobre la web</h1>
+                <p id="infoP">Esta página web es mi portafolio personal; en ella, mostraré avances de mi desarrollo personal y cómo he mejorado como ingeniero en desarrollo de software, así como mi contacto en diversos medios para mi contratación y/o informes en el área académica enfocada en Tecnología y Ciberseguridad.</p>
+            </section>
+            <figure class="slider-container">
+                <div class="slider">
+                    <img src="/imagenes/imagen1.jpg" alt="Imagen 1">
+                    <img src="/imagenes/imagen2.jpg" alt="Imagen 2">
+                    <img src="/imagenes/imagen3.jpg" alt="Imagen 3">
+                </div>
+            </figure>
+        </section>
+    </section>
+
+    <main id="curriculum" class="contenedor-tarjetas">
+        <section class="cv">
+            <h1 class="nombre">Otto Ivan Piñon Barajas</h1>
+            <h2 class="contacto">Contacto:</h2>
+            <p class="numero">477-179-0887</p>
+            <p class="correo">pinonbarajasottoivan@gmail.com</p>
+            
+            <h2 class="subTitle">Perfil</h2>
+            <p class="subInfo">Estudiante de Licenciatura en Ingeniería de Desarrollo de Software Multiplataforma en la Universidad Tecnológica de León. Poseo una gran capacidad de adaptación y aprendizaje rápido, lo que me permite adquirir nuevas habilidades con facilidad. Me esfuerzo constantemente por mejorar y perfeccionar mis conocimientos y competencias.</p>
+            <p class="subInfo">Quiero formar parte de este trabajo para poder desarrollar habilidades sociales con las personas y poder conocer cómo es el campo laboral.</p>
+            
+            <h2 class="subTitle">Formación</h2>
+            <p class="subInfo">Cuento con una formación militar especializada en Ciberseguridad, y un amplio conocimiento en dispositivos electrónicos, así como en su funcionamiento, estructura y conocimiento sobre cómo reparar equipos de cómputo.</p>
+            
+            <h2 class="subTitle">Idiomas</h2>
+            <p class="subInfo">Inglés - B2</p>
+            
+            <h2 class="subTitle">Pasatiempos</h2>
+            <ul class="subInfo">
+                <li>Reparación de dispositivos de cómputo</li>
+                <li>Aprender y desarrollar habilidades de programación</li>
+                <li>Mejorar mi nivel de inglés</li>
+            </ul>
+            
+            <h2 class="subTitle">Experiencia</h2>
+            <ul class="subInfo">
+                <li>Corporativo Muñoz y Asociados (MC) - Seis meses en área de atención al cliente</li>
+                <li>Moto Refaccionaria Charly - Seis meses en área de atención al cliente y mecánica</li>
+            </ul>
+        </section>
+
+        <section class="cv">
+            <h2 class="subTitle">Proyectos y Multimedia</h2>
+            <p class="subInfo">Muestra de configuraciones de redes y sistemas.</p>
+            
+            <video class="video-proyecto" controls>
+                <source src="video/ejemplo_proyecto.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <br><br>
+            <audio class="audio-proyecto" controls>
+                <source src="audio/presentacion.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </section>
+
+        <section id="contacto" class="cv">
+            <h2 class="subTitle">Formulario de Contacto</h2>
+            <form action="#" method="POST" class="formulario-contacto">
+                <label for="nombre" class="subInfo">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required class="input-form">
+
+                <label for="email" class="subInfo">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required class="input-form">
+
+                <label for="mensaje" class="subInfo">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required class="input-form"></textarea>
+
+                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h3 class="subTitle footer-title">Mis Redes Sociales</h3>
+        <div class="redes-sociales">
+            <a href="https://github.com/tu-usuario" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://linkedin.com/in/tu-usuario" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

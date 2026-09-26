@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(253, 255, 223);
+    font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, .subTitle {
+    font-family: 'Oswald', sans-serif;
+}
+
+.nombre {
+    font-family: 'Playfair Display', serif;
+}
+
+p, li, a, label, input, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: rgb(126, 214, 126);
+    margin: 0%;
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#donCamaron {
+    border-radius: 29px;
+    max-width: 25vh;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: rgb(228, 225, 95);
+    padding: 15px;
+    width: 160px;
+    border-radius: 29px;
+    color: rgb(209, 52, 52);
+    font-weight: bold;
+    transition: 150ms;
+}
+
+a:hover {
+    background-color: rgb(209, 52, 52);
+    color: rgb(228, 225, 95);
+    transition: 150ms;
+}
+
+.informacion {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+#infoAd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px; 
+    margin: 0;
+    background-color: white;
+    border-radius: 29px;
+    padding: 40px;
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#infoP {
+    height: auto;
+    max-width: 100%;
+    line-height: 1.6;
+}
+
+figure {
+    margin: 0; 
+}
+
+.slider-container {
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    animation: cambio 9s infinite;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@keyframes cambio {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 30px;
+    padding: 20px 40px 60px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.cv {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 29px;
+    padding: 35px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.nombre {
+    color: rgb(209, 52, 52);
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.subTitle, .contacto {
+    color: rgb(126, 214, 126);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.subInfo, .numero, .correo {
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.numero, .correo {
+    color: chocolate;
+    font-weight: bold;
+}
+
+ul.subInfo {
+    padding-left: 20px;
+}
+
+.video-proyecto {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.audio-proyecto {
+    width: 100%;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.formulario-contacto label {
+    margin-bottom: -5px;
+    font-weight: bold;
+}
+
+.input-form {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-enviar {
+    background-color: rgb(126, 214, 126); 
+    padding: 12px; 
+    border: none; 
+    border-radius: 29px; 
+    font-weight: bold; 
+    color: white;
+    cursor: pointer; 
+    transition: 150ms;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: rgb(209, 52, 52);
+}
+
+footer {
+    background-color: rgb(126, 214, 126);
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-title {
+    color: rgb(253, 255, 223);
+    margin-bottom: 15px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes-sociales a {
+    background-color: transparent;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.redes-sociales a i {
+    color: rgb(209, 52, 52);
+    transition: color 150ms;
+}
+
+.redes-sociales a:hover i {
+    color: rgb(253, 255, 223);
+}
+
+@media (max-width: 800px) {
+    #infoAd {
+        flex-direction: column;
+    }
+    .slider-container {
+        width: 100%;
+    }
+}
