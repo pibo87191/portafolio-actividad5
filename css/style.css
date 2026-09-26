@@ -93,10 +93,12 @@ a:hover {
     flex: 1;
 }
 
-#infoP {
+.infoP {
     height: auto;
     max-width: 100%;
     line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 figure {
@@ -181,12 +183,10 @@ ul.subInfo {
 
 .video-proyecto {
     width: 100%;
+    aspect-ratio: 16 / 9;
     border-radius: 15px;
     margin-top: 10px;
-}
-
-.audio-proyecto {
-    width: 100%;
+    border: none;
 }
 
 .formulario-contacto {
@@ -266,4 +266,7 @@ footer {
     .slider-container {
         width: 100%;
     }
+}
+iframe{
+    border-radius: 29px;
 }
